@@ -1,0 +1,17 @@
+WORK_PATH: "./checkpoint"
+CUDA_VISIBLE_DEVICES: "0"
+
+learning_rate: 0.0005
+GAN: True
+d_iter: 5
+weight_cliping_limit: 0.01
+
+restore: False
+restore_epoch: 260
+
+batch_size: 2
+
+data:
+    train: ["GT_VINS1"]
+    test: ["GT_VINS2"]
+    transform: ["GT2","GT5","GT6_1","GT6_2","GT7","GT8","GT9","GT11","GT12"]
